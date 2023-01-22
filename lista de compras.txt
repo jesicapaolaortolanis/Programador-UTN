@@ -1,0 +1,6 @@
+hilo rojo
+hilo amarilo
+hilo rosa
+hilo verde
+aguja
+tazas
