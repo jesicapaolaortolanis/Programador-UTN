@@ -29,10 +29,10 @@ router.post('/', async(req, res, next) => {
 
     if (data != undefined) {
       //Guardar data de id_usuario
-      req.session.id_usuario = data.ID; //Este id es el nombre de la columna de la base de datos
-      //Para caprutar el nombre de usuario cuando ingrese a la sesion y le diga Hola Usuario..
-      req.session.nombre = data.usuario //Es el nombre de la columna usuario de la base de datos
-      res.redirect('admin/novedades');
+      req.session.id_usuario = data.id; //Este id es el nombre de la columna de la base de datos
+      //Para capturar el nombre de usuario cuando ingrese a la sesion y le diga Hola Usuario..
+      req.session.nombre = data.Usuario //Es el nombre de la columna usuario de la base de datos
+      res.redirect('/admin/novedades');
     } else{
       res.render('admin/login', {
         layout: 'admin/layout',
