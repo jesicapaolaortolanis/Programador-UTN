@@ -1,0 +1,496 @@
+/* Barra de navegación */
+.navbar {
+    padding: 15px;
+    background-color:rgb(233, 232, 223);
+    font-size: 18px;
+}
+
+.navbar-collapse {
+    align-items:center;
+    justify-content: space-between;
+} 
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-verde{
+    color: white;
+    background-color: rgb(36, 170, 125);
+}
+
+.seccion-rosa{
+    color:black;
+    background-color: pink;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: rgb(66, 65, 65);
+}
+
+.seccion-titulo{
+    font-size: 3rem;
+    padding: 15px;
+    font-family:'Dancing Script', cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+
+.texto-negro{
+    color:black;
+}
+
+.texto-blanco{
+    color:white;
+}
+
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color:rgb(227, 241, 101)
+}
+
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5rem;
+    color:beige
+}
+
+
+
+/*Sección Hero */
+.hero-superior {
+    background: url(imagenes/pulpito1.JPG) no-repeat;
+    min-height: 450px;
+    text-align: center;
+    height: 0.5vh;
+}
+
+
+
+/*Sección Sobre mí */
+.sobre-mi{
+    height: 500px;
+    padding:10px
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+
+/*Sección Mis Artesanías - Galerias de fotos */
+.mis-artesanias{
+    padding:40px 40px 60px 40px;
+}
+
+.mis-artesanias .columna{
+    padding: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition:all 0.2s ease-in;
+}
+
+.mis-artesanias .columna:hover{
+    color: white;
+    background-color: rgb(235, 148, 188);
+}
+
+.mis-artesanias i {
+    font-size: 20px;
+    color:blueviolet;
+    background-color: white;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+
+.para-bebes-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px 0;
+}
+
+.para-ninos-y-ninas-titulo {
+    font-size:25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.adornos-y-variedad-titulo{
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+.badges-contenedor {
+   font-size: 17px;
+   font-weight: bold;
+   margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/*Seccion Mis Creaciones - Mis proyectos */
+.proyectos-recientes{
+    padding:40px;
+}
+
+
+.proyectos-recientes img{
+    height: 100%;
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    display:block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition:all 0.2s ease;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.overlay .iconos-contenedor{
+    display:flex;
+}
+
+.overlay i{
+    color:white;
+    font-size: 30px;
+    margin: 250%
+
+}
+
+/* Videos tutoriales recomendados*/
+
+.videos{
+    padding: 30px 30px 100px 30px;
+    min-height: 500px;
+}
+
+.card-header{
+    font-weight: bold;
+}
+
+.card{
+    width: 80%;
+    max-width: 450px;
+    margin: 40px;
+    background-color: rgb(235, 203, 208);
+    transition:all 0.2s ease-in;
+}
+
+.list-group-item{
+    background-color: rgb(252, 223, 243);
+}
+    
+
+/* Sección Testimonios*/
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel{
+    max-width: 800px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Halant', serif;
+}
+
+.testimonio-info{
+    text-align: center;
+    font-weight: bold;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-info .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .provincia{
+    font-size: 0.9rem;
+}
+
+
+/* Sección Contacto*/
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 10px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(206, 138, 150);
+    border-radius: 10px;
+    box-shadow:0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.contacto .button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color:black;
+}
+
+.contacto button:hover i{
+    color:black;
+}
+
+
+
+
+/* Sección Pie de página (Footer) */
+
+footer{
+    min-height: 100px;
+}
+
+.footer-logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+
+.footer-texto{
+    font-size: 1.7rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin:10px;
+    border-radius: 50%;
+    transition: al 0.2s ease-in;
+}
+
+
+.iconos-redes-sociales i{
+    color:white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: black;
+    border: 2px solid rgb(240, 156, 170);
+}
+
+.conos-redes-soaicles a:hover i{
+    color: black;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color:grey;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Adaptable (Responsivo) */
+
+/* Responsive Hero */
+
+@media screen and (max-width:700px){
+    .hero-superior{
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .hero-superior h1{
+        font-size: 42px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-superior h2{
+        font-size: 21px;
+        text-align: center;
+        padding: 10px 60px 10px 60px;
+    }
+}
+
+
+
+/* Responsive sobre mí */
+
+@media screen and (max-width:700px){
+    .sobre-mi .seccion-texto{
+        font-size: 18px;
+    }
+
+    .sobre-mi .seccion-titulo{
+        font-size: 28px;
+    }
+
+    .sobre-mi{
+        height: 700px;
+        padding:30px;
+    }
+    
+    .sobre-mi .contenedor{
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 20px;
+    }
+}
+
+
+/* Responsive testimonios */
+
+@media screen and (max-width:800px){
+    .testimonio-imagen{
+        height: 120px;
+        width: 120px;
+    }
+
+    
+    .testimonio-texto{ 
+        font-size: 18px;
+    }
+
+    .testimonio-info .cliente{
+        font-size: 1rem;
+    }
+    
+    .testimonio-info .provincia{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
+
+
+
+
+
