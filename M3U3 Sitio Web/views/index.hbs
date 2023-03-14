@@ -292,6 +292,73 @@
   </a>
 </section>
 
+<!-- Sección Novedades -->
+
+<div class ='class="videos justify-content-start seccion-rosa d-flex flex-column row my-3'>
+  <div id="novedades" class="col-md-5 offset-md-2 scroll_section">
+    <h1 class="seccion-titulo texto-negro">Novedades</h1>
+    <ul class="lista-novedades">
+      {{#each novedades}}
+   
+  <div class="col">
+    <div class="card">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="images/conejita feria1.jpg" class="card-img-top" alt="Coneja tejida al crochet.">{{Titulo}}</a>
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+
+<!--Modal -->
+{{#each novedades}}
+  <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+         <h3 class="modal-title" id="exampleModalLabel">{{Titulo}}</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>{{Subtitulo}}</h4>
+
+          <h5>{{Cuerpo}}</h5>
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+<!-- Fin del Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Sección Contacto -->
 <section class="contacto seccion-oscura">

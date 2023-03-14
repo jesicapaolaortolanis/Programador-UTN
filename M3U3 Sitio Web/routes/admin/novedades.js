@@ -19,7 +19,7 @@ router.get('/', async function(req, res, next) {
 router.get('/eliminar/:id', async(req, res, next) => {
     
     const id = req.params.id;
-    await novedadesModel.deleteNovedadesById();
+    await novedadesModel.deleteNovedadesById(id);
     res.redirect('/admin/novedades'); 
 
 }); //cierra el get de eliminar
