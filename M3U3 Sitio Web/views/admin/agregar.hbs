@@ -1,0 +1,24 @@
+<div class="mb-3">
+   <h1>Agregar una nueva novedad</h1>
+   <form action ="/admin/novedades/agregar" method="post">
+      <label class="form-label">Titulo</label>
+      <input type="text" class="form-control" placeholder="Ecriba el Titulo de la Novedad..." name="Titulo">
+
+        <div class="mb-3">
+          <label class="form-label">Subtitulo</label>
+          <input type="text" class="form-control" placeholder="El subtitulo es..." name="Subtitulo">
+       </div>
+        <div class="mb-3">
+         <label class="form-label">Cuerpo</label>
+          <textarea type="text" class="form-control" placeholder="El cuerpo de la Novedad es..." name="Cuerpo"></textarea>
+        </div>
+        
+      <button type="submit" class="btn btn-danger">Agregar</button>
+    </form>    
+</div>
+
+
+{{#if error}}
+  <p>{{message}}</p>
+{{/if}}  
+

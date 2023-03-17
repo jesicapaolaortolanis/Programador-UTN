@@ -1,0 +1,22 @@
+<div class= "md-3">
+    <h1>Modificar una novedad</h1>
+    <form action="/admin/novedades/modificar" method="post">
+      <input type="hidden" value = "{{novedad.id}}" name = "id">
+      <div class = "form-group">
+        <label for="">Titulo</label>
+        <input type="text"  class="form-control" placeholder="Ecriba el Titulo de la Novedad..." name="Titulo" value="{{novedad.Titulo}}">
+      </div>
+      <div class="form-group">
+        <label for="">Subtitulo</label>
+        <input type="text" class="form-control" placeholder="El subtitulo es..." name="Subtitulo" value = "{{novedad.Subtitulo}}">
+      </div>
+      <div class="form-group">
+        <label for="">Cuerpo</label>
+        <textarea name="Cuerpo" class="form-control" placeholder="El cuerpo de la Novedad es..." >{{novedad.Cuerpo}}</textarea>
+      </div>
+      <button type="submit" class="btn btn-danger">Modificar</button>
+</form>
+
+{{#if error}}
+  <p>{{message}}</p>
+{{/if}} 

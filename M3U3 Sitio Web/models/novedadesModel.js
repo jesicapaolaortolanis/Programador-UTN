@@ -15,5 +15,38 @@ async function deleteNovedadesById(id) {
 
     };
 
+async function insertNovedad(obj) {
+    try{
+        var query = 'insert into novedades set ?';
+        var rows = await pool.query(query, [obj]);
+        return rows;
 
-module.exports = {getNovedades, deleteNovedadesById}
+    }catch (error){
+        console.log(error);
+        throw error;
+    } // cierra catch
+} //cierra Insert
+
+
+// Traigo los datos para modificar UNA sola novedad
+
+async function getNovedadById(id) {
+    var query = "select * from novedades where id=?";
+    var rows = await pool.query(query, [id]);
+    return rows[0];
+}
+
+
+async function modificarNovedadById(obj, id) {
+    try{
+        var query = "update novedades set ? where id=? ";
+        var rows = await pool.query(query, [obj, id]);
+        return rows;
+    } catch (error) {
+        throw error;
+    }
+} //Cierra modificar update
+
+
+
+module.exports = {getNovedades, deleteNovedadesById, insertNovedad, getNovedadById, modificarNovedadById}

@@ -19,7 +19,7 @@
         
         <div class="col-7  text-right" style = "margin-top: 3px">
             <p class="text-right"></p>
-            <a href="" class = "btn btn-success"><i class ="fas fa-plus"></i>Nuevo</a>
+            <a href="/admin/novedades/agregar" class = "btn btn-success"><i class ="fas fa-plus"></i>Nuevo</a>
         </div>
     {{!-- fin fila 2 --}} 
 
@@ -38,12 +38,12 @@
                 
             </thead>
             <tbody>
+                {{#each novedades}}
                 <tr>
-                     {{#each novedades}}
                     <th scope="row" >{{id}}</th>
                     <td>{{Titulo}}</td>
                     <td class="text-right">
-                           <a href="" button type="button" class="btn btn-secondary"><i class="bi bi-pencil"></i></button></a>
+                           <a href="/admin/novedades/modificar/{{id}}" button type="button" class="btn btn-secondary"><i class="bi bi-pencil"></i></button></a>
                             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="bi bi-trash"></i></a>
                     </td>
                 </tr>
