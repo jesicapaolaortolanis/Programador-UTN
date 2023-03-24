@@ -12,8 +12,8 @@ router.get('/', async function(req, res, next) {
   novedades = novedades.splice(0, 5); //Seleccionamos los primeros 5 elementos del array
 
     novedades = novedades.map(novedad => {
-        if(novedad.imagen_id){
-            const imagen = cloudinary.image(novedad.imagen_id, {
+        if(novedad.img_id){
+            const imagen = cloudinary.url(novedad.img_id, {
                 width: 460,
                 crop: 'fill',
             });

@@ -1,6 +1,6 @@
 <div class= "md-3">
     <h1>Modificar una novedad</h1>
-    <form action="/admin/novedades/modificar" method="post">
+    <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
       <input type="hidden" value = "{{novedad.id}}" name = "id">
       <div class = "form-group">
         <label for="">Titulo</label>
@@ -17,7 +17,7 @@
         </p>
         <p>
           <label><input type="checkbox" name="img_delete" id="img_delete" value="1"> Eliminar imagen actual</label>
-          <input type="hidden" name="img_original" value="{{novedad.imagen_id}}">
+          <input type="hidden" name="img_original" value="{{novedad.img_id}}">
         </p>
       </div>  
         <label for="">Cuerpo</label>
